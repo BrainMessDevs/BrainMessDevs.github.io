@@ -27,7 +27,7 @@ body {
      font-family: 'Poppins', sans-serif;
      line-height: 1.80857;
      font-weight: normal;
-     background: url(../images/body_bg.png);
+     background: url(../assets/images/body_bg.png);
      background-size: auto 100%;
      background-position: center;
      background-repeat: no-repeat;
@@ -110,13 +110,13 @@ button:focus {
 ul,
 li,
 ol {
-     margin: 0px;
-     padding: 0px;
+     margin: 0;
+     padding: 0;
      list-style: none;
 }
 
 p {
-     margin: 0px;
+     margin: 0;
      padding: 0;
      color: #fff;
      font-weight: 400;
@@ -256,8 +256,8 @@ header
 header {
      background: #38839d;
      width: 100%;
-     padding: 22px 30px;
-     height: 96px;
+     padding: 0 30px;
+     height: 85px;
      z-index: 9;
 }
 
@@ -307,7 +307,7 @@ menu section
      z-index: 9999999;
      height: 100%;
      top: 0;
-     left: 0;
+     right: 0;
      background-color: #111;
      overflow-x: hidden;
      transition: 0.5s;
@@ -323,12 +323,13 @@ menu section
      transition: 0.3s;
 }
 
-.sidepanel a:hover {
-     color: #face34;
+.sidepanel a:hover,
+.sidepanel .owl-carousel:hover {
+    color: #11557c;
 }
 
 .sidepanel a.active {
-     color: #face34;
+     color: #5bafc0;
 }
 
 .sidepanel .closebtn {
@@ -419,36 +420,40 @@ menu section
 }
 
 
-/** our_games **/
+/** our_services **/
 
-.our_games {
+.our_services {
      padding: 30px 30px 0 30px;
  }
  
- .our_games_box {
+ .our_services_box {
      background: #fff;
      margin-bottom: 30px;
-     transition: ease-in all 0.5s;
-     padding: 25px 15px 50px 15px;
+     transition: ease-in all 0.1s;
+     padding: 20px 25px 15px 25px;
      transform: scale(1);
      text-align: center;
+     min-height: 300px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
  }
  
- .our_games_box h3 {
-     color: #00bfff;
+ .our_services_box h3 {
+     color: #5bafc0;
      font-size: 22px;
      text-transform: uppercase;
-     transition: ease-in all 0.5s;
+     transition: ease-in all 0.1s;
      font-weight: bold;
      line-height: 22px;
      padding: 20px 0 20px 0;
  }
  
- .our_games_box p {
+ .our_services_box p {
      color: #191a1a;
      font-size: 16px;
      line-height: 28px;
-     transition: ease-in all 0.5s;
+     transition: ease-in all 0.1s;
  }
  
  .image_container {
@@ -462,21 +467,21 @@ menu section
      transition: ease-in all 0.5s;
  }
  
- .our_games_box:hover {
-     transition: ease-in all 0.5s;
+ .our_services_box:hover {
+     transition: ease-in all 0.1s;
      transform: scale(1.1);
  }
  
- .our_games_box:hover .image_container img {
+ .our_services_box:hover .image_container img {
      transition: ease-in all 0.5s;
  }
  
- .our_games_box:hover h3 {
+ .our_services_box:hover h3 {
      transition: ease-in all 0.5s;
  }
  
- .our_games_box:hover p {
-     transition: ease-in all 0.5
+ .our_services_box:hover p {
+     transition: ease-in all 0.5s;
  } 
 
 /** end our_games **/
@@ -494,7 +499,7 @@ menu section
 
 .about .titlepage {
      padding-bottom: 0;
-     margin-bottom: 0px;
+     margin-bottom: 0;
 }
 
 .about_text {
@@ -561,10 +566,10 @@ menu section
 }
 
 .read_more:hover {
-     background: #face34;
+     background: #10496c;
      color: #fff;
      transition: ease-in all 0.5s;
-     border: #face34 solid 2px;
+     border: #75a8c5 solid 2px;    
 }
 
 .img_responsive {
@@ -721,8 +726,6 @@ menu section
 }
 
 .testimonial .carousel-indicators {
-     display: block;
-     display: flex;
      justify-content: center;
      align-items: center;
      flex-wrap: wrap;
@@ -744,12 +747,10 @@ menu section
      background-color: #effafc;
 }
 
-
 /** end testimonial **/
 
 
 /** works **/
-
 .works {
      padding: 80px 0 90px 0;
 }
@@ -757,33 +758,31 @@ menu section
 .works_vedio figure {
      margin: 0;
 }
-
-
 /** end works **/
 
 
 /** contact section **/
 
 .main_form .contactus {
-     border: #404b65 solid 1px;
+     border: #ffffff solid 1px;
      padding: 0 15px;
      margin-bottom: 25px;
      width: 100%;
      height: 79px;
      background: transparent;
-     color: #5e687d;
+     color: #ffffff;
      font-size: 16px;
      font-weight: normal;
 }
 
 .main_form .textarea {
-     border: #404b65 solid 1px;
+     border: #ffffff solid 1px;
      padding: 0 15px;
      margin-bottom: 25px;
      width: 100%;
      height: 79px;
      background: transparent;
-     color: #5e687d;
+     color: #ffffff;
      font-size: 16px;
      font-weight: normal;
      padding-top: 23px;
@@ -795,7 +794,7 @@ menu section
      background-color: transparent;
      text-transform: uppercase;
      color: #fff;
-     padding: 12px 0px;
+     padding: 12px 0;
      max-width: 202px;
      width: 100%;
      display: block;
@@ -807,14 +806,14 @@ menu section
 }
 
 .main_form .send_btn:hover {
-     background-color: #face34;
+     background-color: #10496c;
      transition: ease-in all 0.5s;
      color: #fff;
-     border: #face34 solid 2px;
+     border: #71bbee solid 2px;
 }
 
 #request *::placeholder {
-     color: #5e687d;
+     color: #858383;
      opacity: 1;
 }
 
@@ -909,9 +908,9 @@ menu section
 }
 
 .subs_btn:hover {
-     background: #face34;
+     background: #093752;
      transition: ease-in all 0.5s;
-     border: #face34 solid 2px;
+     border: #71bbee solid 2px;
 }
 
 .copyright {
@@ -920,7 +919,7 @@ menu section
 
 .copyright p {
      color: #fefdfd;
-     padding: 20px 0px;
+     padding: 20px 0;
      border-top: #5c677e solid 1px;
 }
 
