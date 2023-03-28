@@ -228,25 +228,46 @@ loader
 .loader_bg {
      position: fixed;
      z-index: 9999999;
-     background: #fff;
      width: 100%;
      height: 100%;
+    background: rgb(81,160,176);
+    background: radial-gradient(circle, rgba(81,160,176,1) 0%, rgba(61,136,160,1) 34%, rgba(19,86,128,1) 100%);
 }
 
 .loader {
-     height: 100%;
-     width: 100%;
-     position: absolute;
-     left: 0;
-     top: 0;
-     display: flex;
-     justify-content: center;
-     align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);    
+    width: 64px;
+    height: 64px;
+    background-color: rgb(54, 129, 155);
+    overflow: hidden;
+}
+.loader:after{
+    content: '';
+    position: absolute;
+    inset: 8px;
+    margin: auto;
+    background: #4e9cad;
+}
+.loader:before{
+    content: '';
+    position: absolute;
+    inset: -15px;
+    margin: auto;
+    background: #297191;
+    animation: diamondLoader 2s linear infinite;
+}
+@keyframes diamondLoader {
+    0%  ,10% {
+        transform: translate(-64px , -64px) rotate(-45deg)
+    }
+    90% , 100% {
+        transform: translate(0px , 0px) rotate(-45deg)
+    }
 }
 
-.loader img {
-     width: 280px;
-}
 
 
 /*--------------------------------------------------------------------- 
@@ -299,7 +320,19 @@ ul.social_icon li a:hover {
 menu section
 ---------------------------------------------------------------------*/
 
+/* Cursor */
+.typed-cursor {
+    color: #42e0ec;
+}
 
+/* If fade out option is set */
+.typed-fade-out {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#typed, #typed2 {
+    color: #42e0ec;
+}
 
 .sidepanel {
      width: 0;

@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
@@ -25,7 +27,7 @@
 <body class="main-layout">
     <!-- loader  -->
     <div class="loader_bg">
-        <div class="loader"><img src="assets/images/loading.gif" alt="" /></div>
+        <div class="loader"></div>
     </div>
     <!-- end loader -->
     <div id="mySidepanel" class="sidepanel">
@@ -80,9 +82,9 @@
                           <figure><img class="img_responsive" src="assets/images/top_img.webp" alt="#" /></figure>
                         </div>
                       </div>
-                      <div class="col-md-6" data-aos="fade-right" data-aos-delay="600">
+                      <div class="col-md-6" data-aos="fade-right" data-aos-delay="900" data-aos-duration="1250">
                         <div class="bluid">
-                          <h1>All The Brain You Need For Your Mess</h1>
+                            <h1>All The <span id="typed"></span> <br/> You Need For Your <span id="typed2"></span>.</h1>
                           <p>We pride ourselves on providing top-notch full-cycle game development services. Our team consists of certified developers with a wealth of experience in creating and enhancing games. Whether you need a new game built from the ground up or want to improve an existing one, we have the expertise and skills to help you achieve your goals.</p>
                           <div class="center text-center">
                               <div class="owl-carousel">
@@ -397,6 +399,24 @@
         <script>
             AOS.init();
         </script>
+
+    <script>
+        var typed = new Typed('#typed', {
+            strings: ['Brain', 'Mess'],
+            typeSpeed: 50,
+            backSpeed: 40,
+            backDelay: 2000,
+            loop: true
+        });
+
+        var typed2 = new Typed('#typed2', {
+            strings: ['Mess', 'Brain'],
+            typeSpeed: 50,
+            backSpeed: 40,
+            backDelay: 2000,
+            loop: true
+        });
+    </script>
 
    </body>
 </html>
