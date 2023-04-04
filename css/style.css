@@ -527,17 +527,23 @@ menu section
 
 .about_border {
      border: #ddd dashed 1px;
-     padding: 80px 80px;
+     padding: 60px 60px;
+     margin-bottom: 100px;
 }
 
-.about .titlepage {
+.about .title_page {
      padding-bottom: 0;
-     margin-bottom: 0;
+    margin-bottom: 20px;
+}
+
+.about .title_page_desc {
+    padding-bottom: 0;
+    margin-bottom: 70px;
+    font-size: 16px;
 }
 
 .about_text {
      float: right;
-     max-width: 554px;
      width: 100%;
      text-align: left;
 }
@@ -552,7 +558,7 @@ menu section
 
 .about_img {
      max-width: 100%;
-     text-align: right;
+     text-align: center;
      float: right;
      display: flex;
      justify-content: center;
@@ -567,11 +573,11 @@ menu section
 
 /** end about **/
 
-.titlepage {
+.title_page {
      padding-bottom: 60px;
 }
 
-.titlepage h2 {
+.title_page h2 {
      font-size: 45px;
      font-weight: 600;
      line-height: 55px;
@@ -606,7 +612,7 @@ menu section
 }
 
 .img_responsive {
-     max-width: 75%;
+     max-width: 80%;
 }
 
 
@@ -719,7 +725,7 @@ menu section
      margin: 0 40px;
 }
 
-.testimonial .titlepage {
+.testimonial .title_page {
      padding-bottom: 60px;
 }
 

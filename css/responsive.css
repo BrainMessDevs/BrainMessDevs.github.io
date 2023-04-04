@@ -68,7 +68,7 @@ File Name: responsive.css
     .about_border {
         padding: 80px 40px;
     }
-    .titlepage h2 {
+    .title_page h2 {
         font-size: 37px;
         line-height: 41px;
     }
@@ -197,7 +197,7 @@ File Name: responsive.css
     #myCarousel a.carousel-control-next {
         right: 25.3%;
     }
-    .titlepage h2 {
+    .title_page h2 {
         font-size: 35px;
         line-height: 40px;
     }
