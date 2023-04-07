@@ -68,6 +68,12 @@ File Name: responsive.css
     .about_border {
         padding: 80px 40px;
     }
+    .about_text p {
+        line-height: 28px;
+        font-size: 16px;
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
     .title_page h2 {
         font-size: 37px;
         line-height: 41px;
@@ -108,7 +114,7 @@ File Name: responsive.css
 
 @media (min-width: 576px) and (max-width: 767px) {
     header {
-        padding: 21px 3px;
+
     }
     ul.social_icon {
         padding-top: 0;
@@ -122,6 +128,10 @@ File Name: responsive.css
     .logo {
         text-align: center;
         display: block;
+    }
+    .banner_main {
+        padding-bottom: 90px;
+        padding-top: 40px;
     }
     .banner_main .bluid h1 {
         font-size: 51px;
@@ -143,6 +153,12 @@ File Name: responsive.css
         margin-top: 30px;
         float: inherit;
     }
+    .about_text p {
+        line-height: 28px;
+        font-size: 16px;
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
     .graf_tab li a {
         padding: 12px 22px;
     }
@@ -162,7 +178,7 @@ File Name: responsive.css
 
 @media (max-width: 575px) {
     header {
-        padding: 27px 0px;
+
     }
     .d_none {
         display: none !important;
@@ -174,6 +190,10 @@ File Name: responsive.css
     .logo {
         display: block;
         float: left;
+    }
+    .banner_main {
+        padding-bottom: 90px;
+        padding-top: 40px;
     }
     .banner_main .bluid h1 {
         font-size: 26px;
@@ -210,6 +230,8 @@ File Name: responsive.css
     .about_text p {
         line-height: 28px;
         font-size: 16px;
+        padding: 0 40px;
+
     }
     .about_img {
         margin-top: 30px;
@@ -230,5 +252,16 @@ File Name: responsive.css
     }
     .border_testi {
         margin: 0;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 574px) {
+    .about_text p {
+        line-height: 24px;
+        font-size: 16px;
+        padding: 0 20px;
+    }
+    .row-centered {
+        text-align: center;
     }
 }
