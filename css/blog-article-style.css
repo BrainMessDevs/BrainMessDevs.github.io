@@ -692,7 +692,7 @@ menu section
 .title_page h2 {
     font-size: 45px;
     font-weight: 600;
-    line-height: 27px;
+    line-height: 40px;
     color: #fff;
 }
 
@@ -1117,7 +1117,61 @@ menu section
 
 /*- - ener page css--*/
 
+@media only screen and (min-width: 501px) and (max-width: 990px) {
+    p {
+        margin: 0;
+        padding: 0;
+        color: #fff;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 28px;
+    }
+    
+    .title_page h2{
+        font-size: 30px;
+        padding: 20px 25px 20px 25px;
+    }
+    
+    h6 {
+        font-size: 13px
+    }
+}
 
+@media only screen and (max-width: 575px) {
+    p {
+        margin: 0;
+        padding: 0;
+        color: #fff;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 28px;
+    }
+
+    h6 {
+        font-size: 10px
+    }
+
+    .title_page {
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+
+    .title_page h2{
+        font-size: 30px;
+        padding-bottom: 20px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 574px) {
+    .about_text p {
+        line-height: 24px;
+        font-size: 16px;
+        padding: 0 20px;
+    }
+    .row-centered {
+        text-align: center;
+    }
+}
 
 .inner_page .contact {
     margin-top: 90px;

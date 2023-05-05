@@ -589,6 +589,74 @@ menu section
     transition: ease-in all 0.5s;
 }
 
+@media only screen and (min-width: 501px) and (max-width: 990px) {
+
+    .our_services_box p {
+        font-size: 13px;
+        line-height: 28px;
+        padding: 5px 10px 30px 10px;
+    }
+
+    .wrapper_1 {
+        padding: 20px 180px 15px 180px;
+    }
+
+    .wrapper_2 {
+        padding: 20px 90px 15px 90px;
+    }
+
+    .wrapper_3 {
+        padding: 20px 60px 15px 60px;
+    }
+
+    .wrapper_4 {
+        padding: 20px 30px 15px 30px;
+    }
+    
+    .rounded-bg {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    .our_services_box h3 {
+        font-size: 16px;
+        padding: 10px 5px 0 5px;
+    }
+
+    .our_services_box h6 {
+        font-size: 8px;
+        padding: 0 0 5px 0;
+    }
+
+    .our_services_box p {
+        font-size: 10px;
+        line-height: 20px;
+        padding: 5px 10px 20px 10px;
+    }
+    
+    .wrapper_1 {
+        padding: 20px 200px 15px 200px;
+    }
+
+    .wrapper_2 {
+        padding: 20px 50px 10px 50px;
+    }
+
+    .wrapper_3 {
+        padding: 20px 80px 15px 80px;
+    }
+
+    .wrapper_4 {
+        padding: 20px 30px 15px 30px;
+    }
+
+    .rounded-bg {
+        font-size: 10px;
+    }
+}
+
 /** end our_games **/
 
 /** about **/
@@ -687,7 +755,6 @@ menu section
 .img_responsive {
     max-width: 80%;
 }
-
 
 /** graf **/
 
